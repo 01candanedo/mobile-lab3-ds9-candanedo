@@ -8,7 +8,7 @@
 
 Comando: 
 ```bash 
-https://github.com/01candanedo/mobile-lab3-ds9-candanedo.git
+git clone https://github.com/01candanedo/mobile-lab3-ds9-candanedo.git
 ```
 
 ### Paso 2: Entramos en la terminal, y en la dirección del repositorio clonado, escribimos:
