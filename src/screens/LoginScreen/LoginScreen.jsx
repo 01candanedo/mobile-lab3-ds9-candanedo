@@ -2,8 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, ImageBackground, TextInput } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { LinearGradient } from "expo-linear-gradient";
-import GradientText from "../components/GradientText.jsx";
-import HandlerTouchableUtil from "../components/HandlerTouchableUtil.jsx";
+import HandlerTouchableUtil from "../../components/HandlerTouchableUtil.jsx";
 
 export default function App() {
   const navigation = useNavigation();
@@ -16,7 +15,7 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.imageContainer}>
         <ImageBackground
-          source={require("../../assets/Launder_Link_slogan.png")}
+          source={require("../../../assets/Launder_Link_slogan.png")}
           style={styles.imageBackground}
         >
           <LinearGradient
@@ -48,7 +47,7 @@ export default function App() {
             placeholderTextColor={"#999"}
           />
 
-          <Text style={styles.recover}>Recover Password?</Text>
+          <Text style={styles.recover} onPress={() => navigation.navigate("Recover")}>Recover Password?</Text>
         </View>
         
         <HandlerTouchableUtil utilFunction={ValidateLogin} handlerstyle={styles.loginButton}>
